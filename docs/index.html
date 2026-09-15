@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="FruitFlow automatise la programmation de vidéos TikTok depuis Google Drive avec Buffer.">
+  <title>FruitFlow — Drive vers TikTok, sans effort</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23080b12'/%3E%3Cpath d='M18 35c0-10 7-17 17-17 7 0 13 4 16 10-7-2-12 1-15 7-3 7-9 11-18 8z' fill='%237cff83'/%3E%3Cpath d='M33 19c2-6 6-9 12-9-1 6-5 9-12 9z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="FruitFlow, accueil"><span class="mark">F</span>FruitFlow</a>
+    <nav aria-label="Navigation principale">
+      <a href="#fonctionnement">Fonctionnement</a>
+      <a href="#statut">Statut</a>
+      <a class="nav-cta" href="https://github.com/Zentaghi/fruitflow/actions">Ouvrir Actions</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow"><span></span> Google Drive → Buffer → TikTok</div>
+      <h1>Ta file TikTok,<br><em>toujours remplie.</em></h1>
+      <p class="lead">FruitFlow sélectionne les prochaines vidéos de ton Drive, évite les doublons et maintient dix publications programmées automatiquement.</p>
+      <div class="actions">
+        <a class="primary" href="https://github.com/Zentaghi/fruitflow/actions">Lancer FruitFlow</a>
+        <a class="secondary" href="#fonctionnement">Voir comment ça marche</a>
+      </div>
+      <div class="schedule" aria-label="Horaires de publication">
+        <span>4 publications par jour</span>
+        <b>13:45</b><b>16:45</b><b>18:45</b><b>20:45</b>
+      </div>
+    </section>
+
+    <section class="status-wrap" id="statut">
+      <div class="status-head">
+        <div><span class="live-dot"></span> État de l’automatisation</div>
+        <small id="updated">Chargement…</small>
+      </div>
+      <div class="metrics">
+        <article><span>Dans la file</span><strong id="queue">—</strong><small>sur 10 publications</small></article>
+        <article><span>Vidéos utilisées</span><strong id="used">—</strong><small>sans doublons</small></article>
+        <article><span>Prochaine publication</span><strong class="next" id="next">—</strong><small>heure de Paris</small></article>
+      </div>
+    </section>
+
+    <section class="flow" id="fonctionnement">
+      <div class="section-copy">
+        <span class="kicker">Un flux simple</span>
+        <h2>De ton dossier à TikTok en trois étapes.</h2>
+        <p>Le contenu reste dans Google Drive. FruitFlow s’occupe uniquement de l’ordre, des horaires et de la transmission à Buffer.</p>
+      </div>
+      <div class="steps">
+        <article><span>01</span><h3>Lecture du Drive</h3><p>Les vidéos sont classées automatiquement selon leur numéro.</p></article>
+        <article><span>02</span><h3>File intelligente</h3><p>Seules les places libres sont complétées, jusqu’à dix publications.</p></article>
+        <article><span>03</span><h3>Publication</h3><p>Buffer publie sur TikTok aux quatre horaires configurés.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="mark">F</span>FruitFlow</a><p>Automatisation personnelle propulsée par GitHub Actions.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
